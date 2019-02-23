@@ -4,17 +4,19 @@ export default class FormField extends Component {
 
     constructor(props) {
         super(props);
-      }
+    }
 
     render() {
         return (
-            <div className="formField">
-                <div className="field">
-                    <label className="label">{this.props.label}</label>
-                    <div className="control">
-                        <input className="input" type={this.props.type} placeholder={this.props.placeholder}/>
+            <div className="conteiner" >
+                <div className="formField column is-two-fifths is-offset-3" >
+                    <div className="field">
+                        <label className="label">{this.props.label}</label>
+                        <div className="control">
+                            <input className="input" type={this.props.type} placeholder={this.props.placeholder} />
+                        </div>
                     </div>
-                </div>   
+                </div>
             </div>
         );
     }
